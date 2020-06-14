@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strings and Bling | Nasty C</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/badhair.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/materialize.min.css')}}">
+    <Link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/icomoon/style.css')}}">
+</head>
+<body>
+    <div id="whole_content">
+    <div class="container center black-text">
+    <a href="/music" class="black-text"><i class="material-icons medium left">navigate_before</i></a><h3>Nasty C- Strings and Bling</h3>
+    </div>
+    <div class="container center">
+        <img alt="bad hair" id="badhair_cover" src="{{ url_for('static',filename='img/pic1.jpeg')}}">
+    </div>
+
+    <div class="container" id="streamlist">
+        <div class="card z-depth-4">
+                <div class="card-content">
+                    <div class="center">
+                        <table>
+                            <tr>
+                                <td><i class="icon-amazon"></i></td>
+                                <td><button class="btn blue right"><i class="material-icons">play_circle_filled</i></button></td>
+                            </tr>
+                            <tr>
+                                <td><i class="icon-apple"></i></td>
+                                <td><a href='https://music.apple.com/album/badhair/1444122154'><button class="btn blue right"><i class="material-icons">play_circle_filled</i></button></a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="icon-google"></i></td>
+                                <td><button class="btn blue right"><i class="material-icons">play_circle_filled</i></button></td>
+                            </tr>
+                            <tr>
+                                <td><i class="icon-soundcloud"></i></td>
+                                <td><button class="btn blue right"><i class="material-icons">play_circle_filled</i></button></td>
+                            </tr>
+                            <tr>
+                                <td><i class="icon-spotify"></i></td>
+                                <td><button class="btn blue right"><i class="material-icons">play_circle_filled</i></button></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="white-text center"><i class="icon-copyright black-text"><b>2020 Nasty C || All Rights Reserved || By Amal Levi</b></i></footer>
+    </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/init.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js')}}"></script>
+</body>
+</html>

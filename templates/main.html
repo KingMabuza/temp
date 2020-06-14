@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Official Site | Nasty C</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/animate-css/3.7.0/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/materialize.min.css')}}">
+    <Link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/icomoon/style.css')}}">
+</head>
+<body>
+
+    <div class="row">
+
+      <div class="col s1" id="col1">
+        <!--Sidebar-->
+
+        <div id="sidebar">
+            <i class="icon-menu white-text" onclick="menu()"></i>
+        <!--Sidebar links-->
+            <div id="side_links">
+                <a href="https://www.facebook.com/nastyczzle/"><i class="icon-facebook white-text links"></i></a>
+                <a href="https://twitter.com/nasty_csa"><i class="icon-twitter white-text links"></i></a>
+                <a href="https://www.instagram.com/nasty_csa/"><i class="icon-instagram white-text links"></i></a>
+                <a href="https://open.spotify.com/artist/7yqUBFfoumKm6nNuzxpgcD"><i class="icon-spotify white-text links"></i></a>
+                <a href="https://www.youtube.com/channel/UC01ompoZ0RMCuWP2ZODqzbg/featured"><i class="icon-youtube white-text links"></i></a>
+            </div>
+    <!--Sidebar links End-->
+        </div>
+<!--Sidebar Ends-->
+      </div>
+     <!--Content-->
+      <div class="col s9">
+        <div id="animation" class="center">
+            <h2 class="animated fadeInDownBig white-text" id="intro">Nasty C</h2>
+            <h3 class="animated fadeInDownBig delay-1s white-text" id="intro2"><span class="red-text">❤</span>You Fans</h3>
+        </div>
+      </div>
+     <!--Content Ends-->
+      <div id="video-container">
+            <video autoplay muted loop id="myVideo">
+            <source type="video/mp4" src="{{ url_for('static', filename='img/videoplayback-2.mp4')}}"/>
+            </video>
+        </div>
+
+         <div id="menu_overlay">
+            <h2 class="center white-text"><a href="/" class="white-text">Nasty C</a></h2>
+            <div class="center">
+                <i class="icon-arrow-circle-o-left white-text" onclick="exit()"></i>
+            </div>
+
+             <ul class="white-text center">
+                <li><a href="/music">Music</a></li>
+                <li><a href="/tour">Tour</a></li>
+                <li><a href="/contact">Contact</a></li>
+             </ul>
+             <footer class="white-text center"><i class="icon-copyright white-text">2020 Nasty C || All Rights Reserved || By Amal Levi</i></footer>
+         </div>
+
+    </div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/init.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js')}}"></script>
+</body>
+</html>

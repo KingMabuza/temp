@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="{{ url_for('static', filename='img/nasty_c_2.jpg')}}" id="banner">
+    <div id="con">
+    <h4 class="white-text center" id="tit">CONTACT US</h4>
+    <form action = "/contact" method = POST>
+       <input type="text" placeholder="First Name" class="white-text">
+       <input type="text" placeholder="Last Name" class="white-text">
+       <input type="email" placeholder="Email" class="white-text">
+       <input type="tel" placeholder="Telephone" class="white-text">
+       <input type="text" placeholder="Organisation" class="white-text">
+       <select class="input-field browser-default grey-text text-lighten-2" name="select">
+           <option label="Purpose"></option>
+           <option value="booking">Booking</option>
+           <option value="Media">Media</option>
+           <option value="Other" >Other</option>
+       </select>
+        <input type="text" placeholder="Message" class="white-text">
+        <button type="submit" class="btn grey">Submit</button>
+
+    </form>
+
+    <h4 class="white-text center">SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <form>
+            <input type="text" placeholder="Name" class="white-text">
+            <input type="email" placeholder="Email" class="white-text">
+            <button type="submit" class="btn grey">Subscribe</button>
+        </form>
+    </div>
+
+
+
+        <footer class="white-text center"><i class="icon-copyright white-text">2020 Nasty C || All Rights Reserved || By Amal Levi</i></footer>
+</body>
+</html>
